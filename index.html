@@ -1,97 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/styles.css">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <div class="container">
-      <header class="header">
-            <p>Notifications <span class="alert">3</span></p>
-            <p class="reaction">Mark all as read</p>
-      </header> 
-      <div class="card bg">
-        <img src="./images/avatar-mark-webber.webp" class="card_img" alt="avatar-mark-webber">
-        <div>
-            <p> 
-              <span class="name"> Mark Webber </span> reacted to your recent post<span class="event"> My first tournament today!</span> 
-            </p>
-            <small>1m ago</small>
+    <div class="container">
+        <header class="header">
+            <p><span class="not">Notifications</span><span class="nub">3</span><p>
+                <p class="read"> Mark all as read</p>
+        </header>
+        <div class="card bg">
+            <img src="./images/avatar-mark-webber.webp" alt="">
+            <div class="text">
+                <p><span class="name"> Mark Webber</span> reacted to your recent post <span class="action">My first tournament today!</span> <span class="dot">.</span> </p>
+                <small>1m ago</small>
+            </div>
         </div>
-      </div>
-      
-      <div class="card bg">
-        <img src="./images/avatar-angela-gray.webp" class="card_img" alt="avatar-angela-gray">
-        <div>
-            <p> 
-              <span class="name"> Angela Gray </span> followed you<span class="event"></span> 
-            </p>
-            <small>5m ago</small>
+        <div class="card bg">
+            <img src="./images/avatar-angela-gray.webp" alt="">
+            <div class="text">
+                <p><span class="name"> Angela Gray</span> followed you <span class="action"></span> <span class="dot">.</span> </p>
+                <small>5m ago</small>
+            </div>
         </div>
-      </div>
-
-      <div class="card bg">
-        <img src="./images/avatar-jacob-thompson.webp" class="card_img" alt="avatar-jacob-thompson">
-        <div>
-            <p> 
-              <span class="name"> Jacob Thompson </span> has joined your group Chess Club<span class="event"></span> 
-            </p>
-            <small>1 day ago</small>
+        <div class="card bg">
+            <img src="./images/avatar-jacob-thompson.webp" alt="">
+            <div class="text">
+                <p><span class="name"> Jacob Thompson</span> has joined your group <span class="action club">Chess Club</span> <span class="dot">.</span> </p>
+                <small>1 day ago</small>
+            </div>
         </div>
-      </div>
-      
-      <div class="card">
-        <img src="./images/avatar-rizky-hasanuddin.webp" class="card_img" alt="avatar-rizky-hasanuddin">
-        <div>
-            <p> 
-              <span class="name">Rizky Hasanuddin</span>sent you a private message<span class="event"></span> 
-            </p>
-            <small>1 day ago</small>
-            <fieldset>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-              I'm already having lots of fun and improving my game.</fieldset>
+        <div class="card">
+            <img src="./images/avatar-rizky-hasanuddin.webp" alt="">
+            <div class="text">
+                <p><span class="name"> Rizky Hasanuddin</span> sent you a private message <span class="action"></span></p>
+                <small>5 days ago</small>
+                <fieldset>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</fieldset>
+            </div>
+            
         </div>
-      </div>
-
-      <div class="card">
-        <img src="./images/avatar-kimberly-smith.webp" class="card_img" alt="avatar-kimberly-smith">
-        <div>
-            <p> 
-              <span class="name"> Kimberly Smith </span> commented on your picture<span class="event"></span> 
-            </p>
-            <small>1 week ago</small>
+        <div class="card">
+            <img src="./images/avatar-kimberly-smith.webp" alt="">
+            <div class="text">
+                <p><span class="name">Kimberly Smith</span> commented on your picture<span class="action"></span> </p>
+                <small>1 week ago</small>
+            </div>
+            <img src="./images/image-chess.webp" alt="">
         </div>
-        <img src="./images/image-chess.webp" class="card_img" alt="image-chess">
-      </div>
-
-      <div class="card">
-        <img src="./images/avatar-nathan-peterson.webp" class="card_img" alt="avatar-nathan-peterson">
-        <div>
-            <p> 
-              <span class="name">Nathan Peterson </span> reacted to your recent post 5<span class="event">end-game strategies to increase your win rate</span> 
-            </p>
-            <small>2 weeks ago</small>
+        <div class="card">
+            <img src="./images/avatar-nathan-peterson.webp" alt="">
+            <div class="text">
+                <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="action">5 end-game strategies to increase your win rate</span></p>
+                <small>2 weeks ago</small>
+            </div>
         </div>
-      </div>
-
-      <div class="card">
-        <img src="./images/avatar-anna-kim.webp" class="card_img" alt="avatar-anna-kim">
-        <div>
-            <p> 
-              <span class="name">Anna Kim </span> left the group Chess Club 5<span class="event"></span> 
-            </p>
-            <small>2 weeks ago</small>
+        <div class="card">
+            <img src="./images/avatar-anna-kim.webp" alt="">
+            <div class="text">
+                <p><span class="name">Anna Kim </span> left the group <span class="action club">Chess Club</span> </p>
+                <small>2 weeks ago</small>
+            </div>
         </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Aoamos</a>.
       </div>
-
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
